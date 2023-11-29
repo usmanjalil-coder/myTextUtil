@@ -7,7 +7,7 @@ export default function Navbar(props) {
     // <nav  className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <nav style={{backgroundColor: props.mode === 'dark'? 'rgb(3 21 40)' : 'white', borderBottom: props.mode === 'dark'? 'none':'1px solid black'}}  className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a style={{color: props.mode === 'dark'? 'white' : 'black'}} className="navbar-brand" href="/">
+        <a style={{color: props.mode === 'dark'? 'white' : 'black'}} className="navbar-brand" href="#">
           {props.title}
         </a>
         <button
@@ -24,7 +24,7 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a style={{color: props.mode === 'dark'? 'white' : 'black'}} className="nav-link active" aria-current="page" href="/">
+              <a style={{color: props.mode === 'dark'? 'white' : 'black'}} className="nav-link active" aria-current="page" href="#">
                 Home
               </a>
             </li>
